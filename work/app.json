@@ -1,0 +1,8 @@
+{
+  "lynx": "lynx",
+  "processing": "/home/cris/bin/app/processing/processing &",
+  "geogebra": "/home/cris/bin/app/geogebra/pkg/geogebra5-beta/usr/share/geogebra5-beta/geogebra &",
+  "arduino": "/home/cris/bin/app/arduino/arduino &",
+  "sublime": "/home/cris/bin/app/subl/sublime_text &"
+}
+

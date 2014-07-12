@@ -1,0 +1,6 @@
+# Every app will begin with this path: 
+# "/home/cris/bin/app/"
+---
+sublime: /home/cris/bin/app/subl/sublime_text
+arduino: /home/cris/bin/app/arduino/arduino
+processing: /home/cris/bin/app/processing/processing
