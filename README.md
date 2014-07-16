@@ -10,6 +10,7 @@ it shows a list with every application that is not in registry.
 this list is handkept in a json file.
 
 + auto_wp.sh
+
 automatic version of wp.sh
 
 + date.sh
