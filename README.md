@@ -9,6 +9,9 @@ Those are the scripts I use in my computer
 it shows a list with every application that is not in registry.
 this list is handkept in a json file.
 
++ auto_wp.sh
+automatic version of wp.sh
+
 + date.sh
 
 it fixes the hour, since, for some reason, it is always 3 hours
@@ -24,5 +27,5 @@ it lets me change the screen's backlight
 
 + wp.sh
 
-it shows me a list of possible wallpapers and changes the wallpaper 
+it shows me a list of possible wallpapers and changes the wallpaper
 to the selected one, to a random one or does nothing.
