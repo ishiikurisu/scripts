@@ -34,5 +34,5 @@ for word in words:
     new_date = '{} {}'.format(new_date, word)
 
 # set up of new date
-print new_date.strip()
+# print new_date.strip()
 os.system('sudo date --set=\'{}\''.format(new_date))
