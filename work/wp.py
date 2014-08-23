@@ -39,6 +39,8 @@ def choose(options_list):
   #  print "  {}. {}".format(i, option),
   #  i += 1
 
+  if newline is True:
+    print(" ")
   answer = int(input("answer: "))
   if answer is 0:
     exit()

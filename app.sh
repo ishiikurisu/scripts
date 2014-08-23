@@ -1,4 +1,4 @@
 cd ~/desktop/scripts/work
-# ruby app.rb
-python2 app.py
+# ruby sketches/app.rb < echo "json"
+python2 work/app.py
 

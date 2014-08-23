@@ -14,12 +14,34 @@ module Yaml_tools # by @manwithcode
   end
 end
 
+module JSON_tools
+  require 'json'
+
+  def JSON_tools.write output_file_name, variable
+    output_file = File.new output_file_name, "w"
+    output_file.puts JSON.dump variable
+    output_file.close
+  end
+
+  def JSON_tools.read input_file_name
+    input_file = open input_file_name, "r"
+    variable = JSON.parse input_file.read
+    return variable
+  end
+end
+
 class App
-  def initialize
-    @list = 'app.yml'
+  def initialize mode
     @options = []
 
-    @options = Yaml_tools.read @list
+    if mode == 'yaml'
+      @list = 'app.yml'
+      @options = Yaml_tools.read @list
+    else
+      @list = 'app.json'
+      @options = JSON_tools.read @list
+    end
+
     # p @options
     launch(choose())
   end
@@ -49,5 +71,5 @@ class App
   end
 end
 
-App.new
-
+mode = gets
+App.new mode
