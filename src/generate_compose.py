@@ -34,13 +34,36 @@ def generate_tilde_commands(inlet):
     return outlet
 
 
+def generate_circumflex_commands(inlet):
+    outlet = []
+
+    for letter in [inlet, inlet.upper()]:
+        result = html.unescape('&{}circ;'.format(letter))
+        vars = [
+            ('gt', letter, result, ),
+            (letter, 'gt', result, ),
+        ]
+        for var in vars:
+            outlet.append('<Multi_key> <{}> <{}> : "{}"'.format(*var))
+
+    return outlet
+
+
 if __name__ == '__main__':
     with open(sys.argv[1], 'w') as fp:
         fp.write('#include "%L"\n')
+        # portuguese letters
         for letter in 'aeioun':
             cmds = [
                 *generate_grave_commands(letter),
                 *generate_tilde_commands(letter),
+            ]
+            for cmd in cmds:
+                fp.write('{}\n'.format(cmd))
+        # esperanto letters
+        for letter in 'cgjsh':
+            cmds = [
+                *generate_circumflex_commands(letter),
             ]
             for cmd in cmds:
                 fp.write('{}\n'.format(cmd))
