@@ -1,9 +1,0 @@
-{
-  "lynx": "lynx",
-  "processing": "/home/joe/bin/app/processing/processing &",
-  "geogebra": "/home/joe/bin/app/geogebra/pkg/geogebra5-beta/usr/share/geogebra5-beta/geogebra &",
-  "arduino": "/home/joe/bin/app/arduino/arduino &",
-  "sublime": "/home/joe/bin/app/subl/sublime_text &",
-  "notelab": "sh /home/joe/bin/app/notelab/NoteLab_0.2.1beta1/notelab.sh &",
-  "juce": "/home/joe/bin/app/introjucer/Introjucer &"
-}
