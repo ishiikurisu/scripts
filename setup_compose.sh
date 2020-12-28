@@ -6,8 +6,8 @@ then
   echo "Using existing XCompose file"
 else
   echo "Generating new XCompose file"
-  python3 src/generate_compose.py assets/XCompose
+  python3 src/generate_compose.py etc/XCompose
 fi
 
 # storing compose file
-cp assets/XCompose ~/.XCompose
+cp etc/XCompose ~/.XCompose
