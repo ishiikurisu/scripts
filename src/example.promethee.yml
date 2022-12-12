@@ -1,0 +1,35 @@
+---
+meta:
+  weights: roc
+criteria:
+- price
+- comfort
+- consumption
+- beauty
+options:
+- fusca
+- chevette
+- uno
+- corcel
+comparisons:
+  price:
+  - fusca
+  - uno
+  - chevette
+  - corcel
+  comfort:
+  - chevette
+  - corcel
+  - uno
+  - fusca
+  consumption:
+  - uno
+  - fusca
+  - corcel
+  - chevette
+  beauty:
+  - corcel
+  - fusca
+  - chevette
+  - uno
+
